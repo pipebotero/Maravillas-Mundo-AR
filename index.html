@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width"><!--, user-scalable=no">-->
+		<title>Maravillas del Mundo</title>
+		<link rel="stylesheet" href="css/style.css">
+
+		<!--[if lt IE 9]>
+	 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	 	<![endif]-->
+	
+		<!-- JQuery -->
+		<script src="libs/Jquery/jQuery-2.1.4.min.js"></script>
+		
+
+		<!-- JSAruco -->
+		<script src="libs/Jsaruco/aruco.js"></script>
+		<script src="libs/Jsaruco/cv.js"></script>
+		<script src="libs/Jsaruco/posit1.js"></script>
+		<!--script src="libs/Jsaruco/posit2.js"></script-->
+		<script src="libs/Jsaruco/svd.js"></script>
+
+		<!-- ThreeJS -->
+		<script src="libs/ThreeJS-r71/build/three.min.js"></script>
+		<script src="libs/ThreeJSLibs/OrbitControls.js"></script>
+		<script src="libs/ThreeJSLibs/Stats.js"></script>
+		<script src="libs/ThreeJS-r71/examples/js/loaders/DDSLoader.js"></script>
+		<script src="libs/ThreeJS-r71/examples/js/loaders/MTLLoader.js"></script>
+		<script src="libs/ThreeJS-r71/examples/js/loaders/OBJMTLLoader.js"></script>
+		<script src="libs/ThreeJS-r71/examples/js/loaders/ColladaLoader.js"></script>
+
+		<script src="libs/ThreeJS-r71/examples/js/renderers/Projector.js"></script>
+		<script src="libs/ThreeJS-r71/examples/js/renderers/CanvasRenderer.js"></script>
+
+		<script src="libs/ThreeJS-r71/examples/js/Detector.js"></script>
+		
+		<!-- Scripts Usados -->
+		<script src="scripts/app.js"></script>
+		<script src="scripts/ar.js"></script>
+		<script src="scripts/keyEvents.js"></script>
+		<script src="scripts/ObjectLoader.js"></script>
+		<script src="scripts/Sound.js"></script>
+		<script src="scripts/utils.js"></script>
+		<script src="scripts/info.js"></script>
+		<script src="scripts/contenido.js"></script>
+
+
+		<!-- Iconos -->
+		<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+	</head>
+	<body>
+		<header>
+			<h1>MARAVILLAS DEL MUNDO</h1>
+		</header>
+		<div id="wrap-body">
+		<div id="content-info">
+		</div>
+			<div id="controles">
+				<div class="btnControls" id="dia" onclick="luzDia()"><i class="fa fa-sun-o fa-lg"></i></div>
+				<div class="btnControls" id="noche" onclick="luzNoche()"><i class="fa fa-moon-o fa-lg"></i></div>
+				<div class="btnControls" id="rIZQ" onclick="rotatarIzq()"><i class="fa fa-undo fa-lg"></i></div>
+				<div class="btnControls" id="rDER" onclick="rotatarDer()"><i class="fa fa-repeat fa-lg"></i></div>
+				<div class="btnControls" id="zoomMenos" onclick="zoomMenos()"><i class="fa fa-search-minus fa-lg"></i></div>
+				<div class="btnControls" id="zoomMas" onclick="zoomMas()"><i class="fa fa-search-plus fa-lg"></i></div>
+				<div>
+					<div class="btnControls" id="camera" onclick="cameraReset()"><i class="fa fa-camera fa-lg"></i></div>
+					<div class="btnControlsCam" id="camera-top" onclick="cameraTop()">TOP</div>
+					<div class="btnControlsCam" id="camera-bot" onclick="cameraBoT()">BOT</div>
+					<div class="btnControlsCam" id="camera-front" onclick="cameraFront()">FRONT</div>
+					<div class="btnControlsCam" id="camera-back" onclick="cameraBack()">BACK</div>
+					<div class="btnControlsCam" id="camera-left" onclick="cameraLeft()">LEFT</div>
+					<div class="btnControlsCam" id="camera-right" onclick="cameraRight()">RIGHT</div>
+				</div>
+			</div>
+			<video id="video" width=1024 height=768 autoplay="true" style="display:none;"></video>
+			<canvas id="canvas" style="width: 1024px; height: 768px;"></canvas>
+			<div id="container"></div>
+		</div>
+		
+		<footer></footer>
+
+		<script type="text/javascript">
+		var audio;
+			$(function(){
+				onLoad();
+				
+			});
+
+
+
+		</script>
+	</body>
+</html>
+
+

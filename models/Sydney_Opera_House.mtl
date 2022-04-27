@@ -1,0 +1,76 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl FrontWindow
+Ka 0.000000 0.000000 0.000000
+Kd 0.200000 0.168627 0.164706
+Ks 0.330000 0.330000 0.330000
+map_Kd Sydney_Opera_House/FrontWindow.jpg
+
+newmtl FrontGlass
+Ka 0.000000 0.000000 0.000000
+Kd 0.270588 0.211765 0.196078
+Ks 0.330000 0.330000 0.330000
+map_Kd Sydney_Opera_House/FrontGlass.jpg
+
+newmtl _White_
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.330000 0.330000 0.330000
+
+newmtl FrontWindow1_
+Ka 0.000000 0.000000 0.000000
+Kd 0.200000 0.168627 0.164706
+Ks 0.330000 0.330000 0.330000
+map_Kd Sydney_Opera_House/FrontWindow1_.jpg
+
+newmtl MidGlass
+Ka 0.000000 0.000000 0.000000
+Kd 0.250980 0.286275 0.270588
+Ks 0.330000 0.330000 0.330000
+d 0.900000
+map_Kd Sydney_Opera_House/MidGlass.jpg
+
+newmtl SideGlass
+Ka 0.000000 0.000000 0.000000
+Kd 0.109804 0.117647 0.117647
+Ks 0.330000 0.330000 0.330000
+d 0.850000
+map_Kd Sydney_Opera_House/SideGlass.jpg
+
+newmtl FrontWindow2_
+Ka 0.000000 0.000000 0.000000
+Kd 0.200000 0.168627 0.164706
+Ks 0.330000 0.330000 0.330000
+map_Kd Sydney_Opera_House/FrontWindow2_.jpg
+
+newmtl BackColor
+Ka 0.000000 0.000000 0.000000
+Kd 0.670588 0.690196 0.800000
+Ks 0.330000 0.330000 0.330000
+
+newmtl FrontWindow3_
+Ka 0.000000 0.000000 0.000000
+Kd 0.200000 0.168627 0.164706
+Ks 0.330000 0.330000 0.330000
+map_Kd Sydney_Opera_House/FrontWindow3_.jpg
+
+newmtl FrontWindow4_
+Ka 0.000000 0.000000 0.000000
+Kd 0.200000 0.168627 0.164706
+Ks 0.330000 0.330000 0.330000
+map_Kd Sydney_Opera_House/FrontWindow4_.jpg
+
+newmtl FrontWindow5_
+Ka 0.000000 0.000000 0.000000
+Kd 0.200000 0.168627 0.164706
+Ks 0.330000 0.330000 0.330000
+map_Kd Sydney_Opera_House/FrontWindow5_.jpg
+
+newmtl FrontWindow6_
+Ka 0.000000 0.000000 0.000000
+Kd 0.200000 0.168627 0.164706
+Ks 0.330000 0.330000 0.330000
+map_Kd Sydney_Opera_House/FrontWindow6_.jpg
+
